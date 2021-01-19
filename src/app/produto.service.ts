@@ -4,7 +4,7 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
-const urlBase: string = "http://localhost:8080/api/produtos";
+const urlBase: string = "https://server-produtos.glitch.me/api/produtos";
 @Injectable({
   providedIn: 'root'
 })
