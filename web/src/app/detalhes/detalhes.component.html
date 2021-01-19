@@ -1,0 +1,14 @@
+<button class="btn btn-primary" (click)="voltar()">Voltar</button>
+<div class="bg-dark mt-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" *ngIf="produtoDetalhe">
+    <div class="my-3 py-3">
+        <h2 class="display-5">{{produtoDetalhe.title}}</h2>
+        <p class="lead">R$ {{produtoDetalhe.price}}</p>
+    </div>
+    <div class="bg-light box-shadow mx-auto text-dark" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <div class="d-flex w-100 h-100 justify-content-center align-items-center">
+            <p class="h3">
+                {{produtoDetalhe.description}}
+            </p>
+        </div>
+    </div>
+</div>

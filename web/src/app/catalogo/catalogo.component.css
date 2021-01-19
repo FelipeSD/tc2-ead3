@@ -1,0 +1,20 @@
+.card-product .card{
+    position: relative;
+    cursor: pointer;
+    transition: all .5s;
+}
+.card-product .card:hover{
+    background-color: slateblue;
+    color: #ffffff;
+}
+
+.card-product .delete{
+    z-index: 1;
+    position: absolute;
+    display: none;
+    right: 5%;
+}
+.card-product:hover .delete{
+    color: #ffffff;
+    display: inline;
+}

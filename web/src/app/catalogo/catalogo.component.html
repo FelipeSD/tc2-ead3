@@ -1,0 +1,22 @@
+<section>
+    <h4 class="display-6">Lista de Produtos</h4>
+    <div class="row" *ngIf="produtos.length; else loadingBlock">
+        <div class="col-md-3 mb-3" *ngFor="let produto of produtos">
+            <div class="card-product">
+                <a class="btn btn-outline-danger delete" routerLink="/products/delete/{{produto._id}}">
+                    <i class="fas fa-trash-alt"></i>
+                </a>
+                <a class="card h-100" routerLink="/products/details/{{produto._id}}">
+                    <div class="card-body">
+                        {{produto.title}}
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <ng-template #loadingBlock>
+        <div class="spinner-border spinner-border-sm text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </ng-template>
+</section>
